@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(59 120 87 / 85%),rgb(97 145 103 / 52%)),url(../php_project_pictures/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+/* ---------- header ------------ */
+/* header{
+    background-color: rgb(32 88 55 / 73%);
+} */
+.continer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo button{
+    background-color: #891818;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    border: none;
+}
+.logo button a{
+    text-decoration: none;
+    color: white;
+}
+nav img {
+    width: 80px;;
+    height: 80px;
+    border-radius: 50%;
+}
+nav{
+    padding: 2% 5%;
+    
+}
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display:inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+nav ul li::after{
+    content: "";
+    width:0%;
+    height:3px;
+    background-color: #C5C6C7;
+    display: block;
+    margin: 5px auto;
+    transition: 0.7s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul ul{
+display: none;
+}
+nav ul ul li{
+    display: block;
+    margin-top: 20px;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+.logo p{
+    display: inline-block;
+    position:relative;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    background-color: rgb(32, 88, 55);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+/* -------------------- mian ----------------------------------- */
+.main{
+    background-color: rgb(255 255 255 / 24%);
+    width: 85%;
+    margin: 100px auto 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    margin: 30px auto 100px;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255 255 255 / 24%);
+    border-radius: 10px;
+    color: white;
+    width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+}
+.card .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-content p{
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fffffff2;
+    line-height: 30px;
+    /* color: rgb(80 137 74); */
+    color:rgb(32, 88, 55);
+    
+}
+.icon h3{
+    margin: 15px;
+    letter-spacing: 7px;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    text-decoration: underline;
+}
+.card .icon img{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+
+.move-up{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    background-color: white;
+    padding:10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.move-up img{
+    width: 50px;
+    height: 50px;
+    
+}
+/* -------- footer --------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32 88 55 / 73%);
+    padding:30px;
+    margin-bottom: 0;
+    
+    
+
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 5px;
+    list-style-type: circle;
+    
+}
+footer ul li a{
+    /* text-decoration: none; */
+    color: white;
+    font-weight: bold;
+}
+footer p{
+    margin: 5px;
+    color: rgb(177, 170, 170);
+}
